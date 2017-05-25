@@ -1,3 +1,2 @@
-# psychopharm
 # sati
-# sati
+## Mindfulness App for students
