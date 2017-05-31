@@ -42,13 +42,19 @@ tara_vipassana : 1,
 tara_brief: 1,
 tara_calm : 1
 }
-
+console.log("FFAFSA");
 sortList();
+
 
 function sortList() {
     var sortable = [];
+    console.log("FFAFSA");
     for (var technique in techniques)
-        sortable.push([technique, techniques[technique]])
+        console.log("fdsafd",technique[0]);
+        alert("Hello! I am an alert box!");
+        if(technique[0]!= 0){
+        sortable.push([technique, techniques[technique]]);
+        }
     sortable.sort(function(a, b) {
         return a[1] - b[1]
     })

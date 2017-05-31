@@ -48,7 +48,10 @@ sortList();
 function sortList() {
     var sortable = [];
     for (var technique in techniques)
+   
+        if(techniques[technique]!= 0){
         sortable.push([technique, techniques[technique]])
+    }
     sortable.sort(function(a, b) {
         return a[1] - b[1]
     })
