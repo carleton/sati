@@ -1,27 +1,27 @@
-var apps = "Links to download meditation apps"
-var three_five_seven_breathing_description = "3 5 7 breathing description (with eyes open or closed)"
-var body_scan_description = "Body scan description (with eyes open or closed)"
-var breathing_meditation_description = "breathing_meditation_description description"
-var senses  = "Mindfulness with senses / certain activities description (make tea, eat, color, walk, etc)"
-var NYT_mindful_eating = "eating"
-var walking = "NYT walking meditation"
-var tea = "NYT mindful cup of tea"
-var nyt_scan = "NYT body scan"
-var calm_breath = "CALM mindfulness of breath audio"
-var calm_scan = "CALM long body scan audio"
-var calm_muscle = "CALM muscle relaxation audio"
-var calm_walking = "CALM walking meditation audio"
-var calm_sitting = "CALM sitting loving kindness meditation audio"
-var calm_walking_kindness = "CALM walking loving kindness meditation audio"
-var youtube_1 = "YouTube 1: https://www.youtube.com/watch?v=Jyy0ra2WcQQ&t=201s (waves)"
-var youtube_2 = "YouTube 2: https://www.youtube.com/watch?v=xoYnqvadurg"
-var youtube_3  = "YouTube 3: https://www.youtube.com/watch?v=rR6DZz5EX4E"
-var tara_vipassana = "Tara Brach vipassana meditation audio"
-var tara_brief = "Tara Brach brief audio"
-var tara_calm = "Tara Brach video (opening and calming)"
-var self_compassion_break = "self compassion break"
-var loving_kindness_text = "loving kindness text"
-var body_sound_text = "body and sound text"
+var apps = "Meditation Apps"
+var three_five_seven_breathing_description = "4-7-8 Breathing"
+var body_scan_description = "Body Scan"
+var breathing_meditation_description = "Breathing Meditation"
+var senses  = "Mindfulness Activities"
+var NYT_mindful_eating = "Mindful Eating"
+var walking = "Walking Meditation"
+var tea = "Cup of Tea"
+var nyt_scan = "Body Scan"
+var calm_breath = "Mindfulness of Breath"
+var calm_scan = "Long Body Scan"
+var calm_muscle = "Muscle Relaxation"
+var calm_walking = "CALM Walking Meditation"
+var calm_sitting = "CALM Sitting Loving Kindness"
+var calm_walking_kindness = "CALM Walking Loving Kindness"
+var youtube_1 = "Relaxation Video"
+var youtube_2 = "Meditation to Reduce Anxiety"
+var youtube_3  = "Restful Sleep"
+var tara_vipassana = "Tara Brach Vipassana"
+var tara_brief = "Tara Brach Brief"
+var tara_calm = "Tara Brach Calming"
+var self_compassion_break = "Self-Compassion Break"
+var loving_kindness_text = "Loving-Kindness"
+var body_sound_text = "Body and Sound"
 
 var techniques = {
 apps : 1,
@@ -189,7 +189,7 @@ function relaxing() {
         techniques.tara_vipassana = 0;
         techniques.tara_calm = 0;
         techniques.breathing_meditation_description = 0;
-        techniques.eating = 0;
+        techniques.NYT_mindful_eating = 0;
         sortList();
     } else {
         techniques.body_scan_description = 1;
@@ -202,7 +202,7 @@ function relaxing() {
         techniques.tara_vipassana = 1;
         techniques.tara_calm = 1;
         techniques.breathing_meditation_description = 1;
-        techniques.eating = 1;
+        techniques.NYT_mindful_eating = 1;
         sortList();
     }
 }
@@ -427,3 +427,7 @@ function wifi() {
         sortList();
     }
 }
+
+
+
+
