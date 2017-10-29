@@ -28,6 +28,10 @@ Mindfulness Resources
         <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+        <div data-role="popup" id="popupBasic">
+<p>This is a completely basic popup, no options set.</p>
+</div>
         <div data-role="page" id="pageone" data-theme="b">
             <div data-role="header">
                 <h1>Intro</h1>
@@ -62,13 +66,22 @@ Mindfulness Resources
                     </div><!-- /navbar -->
                     </div><!-- /footer -->
                 </div>
+
+
+
+
+
+
+
                 <div data-role="page" id="pagetwo" data-theme="b">
                     <div data-role="header">
                         <h1>Basic Self Care Stuff</h1>
                         <!--<img src="img/logo.png" class="ui-btn-left" /> -->
                     </div>
                     <div data-role="main" class="ui-content">
-                        
+                          Before we get to mindfulness and meditation, take a few moments to evaluate your basic self-care practices
+                       
+
                         <div data-role = "collapsible" data-theme="b" data-content-theme="b" >
                             <h3>Have any of your routines changed recently? (Exercise, Food & water, Sleep, Personal Hygiene, Substance use)</h3>
 
@@ -146,62 +159,68 @@ Mindfulness Resources
                         <div data-role="page" id="pagethree" data-theme="b">
                             <div data-role="header">
                                 <h1>Meditation Techniques</h1>
+                                <strong>Check all that describe your current situation / intentions for using this site:</strong>
                                 <!--<img src="img/logo.png" class="ui-btn-left" /> -->
                             </div>
                             <div data-role="main" class="ui-content">
                                 <div class="ui-grid-a ui-responsive">
-                                    <div class="ui-block-a"><strong>Check all that describe your current situation / intentions for using this site:</strong>
-                                        <div onclick="crisis();">
-                                            <label for="crisis">Is this a crisis situation?</label>
-                                            <input type="checkbox" data-role="flipswitch" name="crisis" id="crisis" data-on-text="yes"  data-off-text="no">
+                                    <div class="ui-block-a">
+                                        <strong>Mental/ emotional state</strong>
+                                        <div onclick="sensoryOverload();">
+                                            <label for="sensoryOverload">Are you feeling a bit of sensory overload?</label>
+                                            <input type="checkbox" data-role="flipswitch" name="sensoryOverload" id="sensoryOverload" data-on-text="yes"  data-off-text="no">
                                         </div>
-                                        <div onclick="emotions();">
-                                            <label for="emotions">Are you experiencing intense emotions?</label>
-                                            <input type="checkbox" data-role="flipswitch" name="emotions" id="emotions" data-on-text="yes"  data-off-text="no">
-                                        </div>
-                                        <div onclick="sensory();">
-                                            <label for="sensory">Are you experiencing sensory overload?</label>
-                                            <input type="checkbox" data-role="flipswitch" name="sensory" id="sensory" data-on-text="yes"  data-off-text="no">
-                                        </div>
-                                        <div onclick="stress();">
-                                            <label for="stress">Are you stressed out?</label>
-                                            <input type="checkbox" data-role="flipswitch" name="stress" id="stress" data-on-text="yes"  data-off-text="no">
+                                        <div onclick="stressedOut();">
+                                            <label for="stressedOut">Are you feeling stressed out?</label>
+                                            <input type="checkbox" data-role="flipswitch" name="stressedOut" id="stressedOut" data-on-text="yes"  data-off-text="no">
                                         </div>
                                         <div onclick="isolated();">
                                             <label for="isolated">Are you feeling isolated?</label>
                                             <input type="checkbox" data-role="flipswitch" name="isolated" id="isolated" data-on-text="yes"  data-off-text="no">
                                         </div>
-                                        <div onclick="worry();">
-                                            <label for="worry">Are you feeling worry about problems out of your control?</label>
-                                            <input type="checkbox" data-role="flipswitch" name="worry" id="worry" data-on-text="yes"  data-off-text="no">
-                                        </div>
-                                        <div onclick="uncentered();">
-                                            <label for="uncentered">Are you feeling uncentered or dissociated?</label>
-                                            <input type="checkbox" data-role="flipswitch" name="uncentered" id="uncentered" data-on-text="yes"  data-off-text="no">
-                                        </div>
-                                        <div onclick="dissatisfied();">
-                                            <label for="dissatisfied">Are you feeling irritable or on edge?</label>
-                                            <input type="checkbox" data-role="flipswitch" name="dissatisfied" id="dissatisfied" data-on-text="yes"  data-off-text="no">
+                                        <div onclick="identity();">
+                                            <label for="identity">Are you experiencing social or identity issues?</label>
+                                            <input type="checkbox" data-role="flipswitch" name="identity" id="identity" data-on-text="yes"  data-off-text="no">
                                         </div>
                                         <div onclick="relaxing();">
-                                            <label for="relaxing">Are you having trouble relaxing?</label>
+                                            <label for="relaxing">Having trouble relaxing?</label>
                                             <input type="checkbox" data-role="flipswitch" name="relaxing" id="relaxing" data-on-text="yes"  data-off-text="no">
                                         </div>
-                                        <div onclick="sleep();">
-                                            <label for="sleep">Are you having trouble sleeping?</label>
-                                            <input type="checkbox" data-role="flipswitch" name="sleep" id="sleep" data-on-text="yes"  data-off-text="no">
+                                        <div onclick="sleeping();">
+                                            <label for="sleeping">Having trouble sleeping?</label>
+                                            <input type="checkbox" data-role="flipswitch" name="sleeping" id="sleeping" data-on-text="yes"  data-off-text="no">
                                         </div>
                                         <div onclick="practice();">
-                                            <label for="practice">Are you hoping to develop a meditation practice?</label>
+                                            <label for="practice">Hoping to develop a meditation practice?</label>
                                             <input type="checkbox" data-role="flipswitch" name="practice" id="practice" data-on-text="yes"  data-off-text="no">
                                         </div>
+                                         <strong>Physical setting</strong>
+                                         <div onclick="public();">
+                                            <label for="public">Are you in a public space?</label>
+                                            <input type="checkbox" data-role="flipswitch" name="public" id="public" data-on-text="yes"  data-off-text="no">
+                                        </div>
+                                        <div onclick="closingEyes();">
+                                            <label for="closingEyes">Are you uncomfortable closing your eyes?</label>
+                                            <input type="checkbox" data-role="flipswitch" name="closingEyes" id="closingEyes" data-on-text="yes"  data-off-text="no">
+                                        </div>
+                                        <div onclick="headphones();">
+                                            <label for="headphones">Do you not have headphones handy?</label>
+                                            <input type="checkbox" data-role="flipswitch" name="headphones" id="headphones" data-on-text="yes"  data-off-text="no">
+                                        </div>
+                                        <div onclick="wifi();">
+                                            <label for="wifi">Is the wifi/ data connection terrible?</label>
+                                            <input type="checkbox" data-role="flipswitch" name="wifi" id="wifi" data-on-text="yes"  data-off-text="no">
+                                        </div>
+                                        
+
+
                                     </div>
                                     <div class="ui-block-b"><strong>Recommended Techniques</strong>
                                         <br>
                                         
-                                        <ol id = "medlist" data-role="listview" data-inset="true">
+                                        <ul id = "medlist" data-role="listview" data-enhanced="true" data-inset="true" data-shadow="false">
                                             
-                                        </ol></div>
+                                        </ul></div>
                                         
                                     </div>
                                     
@@ -210,6 +229,24 @@ Mindfulness Resources
                                     <h1></h1>
                                 </div>
                             </div>
+
+
+<div data-role="page" id="apps" data-theme="b">
+            <div data-role="header">
+                <h1>Intro</h1>
+                <!--<img src="img/logo.png" class="ui-btn-left" /> -->
+            </div>
+            <div data-role="main" class="ui-content">
+               Hi
+            </div>
+            <div data-role="footer">
+                <div data-role="navbar" data-iconpos="right" >
+                    <ul>
+                        <li  ><a href="#pagetwo" data-icon="arrow-r">Next</a></li>
+                    </ul>
+                    </div><!-- /navbar -->
+                    </div><!-- /footer -->
+                </div>
                             <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
                             <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
                             <script src="js/plugins.js"></script>
